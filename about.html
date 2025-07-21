@@ -1,101 +1,125 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Brandon Lysholm's Portfolio</title>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/flatly/bootstrap.min.css">
-        <link rel="stylesheet" href="./styles/my_navbar.css">
-        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">-->
-    </head>
-    <body>
-    <!-- Navbar using bootstrap navbar basic settings -->
-    <div class="h-100 mb-2">
-        <nav class="navbar navbar-expand-sm bg-primary" data-bs-theme="dark">
-            <div class="container-fluid">
-                <div class="container vstack d-md-none">
-                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle Navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div class="container-fluid">
-                    <div class="collapse navbar-collapse justify-content-center d-md-flex" id="navbarNavAltMarkup">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <img src="images/divider.jpg" class="d-none d-md-block flex-shrink"/>
-                            <li class="nav-item">
-                                <a class="nav-link" href="audio.html">Audio</a>
-                            </li>
-                            <img src="images/divider.jpg" class="d-none d-md-block flex-shrink"/>
-                            <li class="nav-item">
-                                <a class="nav-link" href="video.html">Video</a>
-                            </li>
-                            <img src="images/divider.jpg" class="d-none d-md-block flex-shrink"/>
-                            <li class="nav-item">
-                                <a class="nav-link" href="lighting.html">Lighting</a>
-                            </li>
-                            <img src="images/divider.jpg" class="d-none d-md-block flex-shrink"/>
-                            <li class="nav-item">
-                                <a class="nav-link" href="it.html">IT Support</a>
-                            </li>
-                            <img src="images/divider.jpg" class="d-none d-md-block flex-shrink"/>
-                            <li class="nav-item">
-                                <a class="nav-link" href="education.html">Education</a>
-                            </li>
-                            <img src="images/divider.jpg" class="d-none d-md-block flex-shrink"/>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="about.html">About Me</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brandon Lysholm's Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/my_navbar.css">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">-->
+</head>
+<body>
+<!-- Navbar using bootstrap navbar basic settings -->
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary py-0" data-bs-theme="dark">
+    <div class="container-fluid">
+        <div class="container vstack d-md-none">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse justify-content-center d-md-flex" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li class="mynav-text-center d-md-none">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="mynav-text-center nav-item">
+                        <a class="nav-link" href="audio.html">Audio</a>
+                    </li>
+                    <img src="images/divider.jpg" class="d-none d-md-block flex-shrink"/>
+                    <li class="mynav-text-center nav-item">
+                        <a class="nav-link" href="video.html">Video</a>
+                    </li>
+                    <img src="images/divider.jpg" class="d-none d-md-block flex-shrink"/>
+                    <li class="mynav-text-center nav-item">
+                        <a class="nav-link" href="lighting.html">Lighting</a>
+                    </li>
+                    <img src="images/divider.jpg" class="d-none d-md-block flex-shrink"/>
+                    <li class="mynav-text-center">
+                        <a class="nav-link d-none d-md-block" aria-current="page" href="index.html"><strong>Home</strong></a>
+                    </li>
+                    <img src="images/divider.jpg" class="d-none d-md-block flex-shrink"/>
+                    <li class="mynav-text-center nav-item">
+                        <a class="nav-link" href="it.html">IT Support</a>
+                    </li>
+                    <img src="images/divider.jpg" class="d-none d-md-block flex-shrink"/>
+                    <li class="mynav-text-center nav-item">
+                        <a class="nav-link" href="education.html">Education</a>
+                    </li>
+                    <img src="images/divider.jpg" class="d-none d-md-block flex-shrink"/>
+                    <li class="mynav-text-center nav-item">
+                        <a class="nav-link active" href="about.html">About Me</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </div>        <div class="container">
-			<div class="row justify-content-center">
-				<img class="col-md-4"src="./images/profile2020.png" alt="Picture of Brandon" />
-			</div>
-			<div class="row">
-				<h1 class="text-center">About Me</h1>
-			</div>
-			<div class="row justify-content-center">
-				<p>
-					I grew up in various towns in western Canada. (I was a pastor’s kid, so we moved around a lot.)  When I was in high school, my family lived in northern BC. After graduating high school in 2015, 
-					I worked full-time for a year before attending Ambrose University starting in the fall of 2016.  <br /><br />
-					
-					At Ambrose, I went through the School of Ministry program, graduating with a Bachelor of Theology in Church Ministry, with a minor in Psychology and a second minor in Sociology. Attending Ambrose was when my interest in 
-					theology really developed. I deeply enjoyed the biblical studies classes, and I gained an understanding that there can be multiple approaches to theological issues that are each biblically supported. I also started 
-					getting involved in tech at my church during my third year. As my church was short on sound techs, I got a lot of practice in a short time and learned a lot. In my fourth year, I took the position of Chapel Tech 
-					Coordinator at Ambrose, which involved overseeing both sound techs and ProPresenter techs. In previous years, the Tech Coordinator did more of the tech themselves, but I wanted to build a volunteer team to cover the 
-					positions needed. I started the year with one ProPresenter tech, who had the same goal of building a team. He was passionate and competent, so I supported him as he managed the ProPresenter team, which he built 
-					up to include three more techs by the end of the year. On the audio side, I recruited and trained three more sound techs. Building up, training, and supporting this volunteer team was the highlight of this 
-					position for me. <br /><br />
-					
-					After my fourth year, I moved to Saskatoon in the Spring of 2020 to do my internship at Westgate Alliance Church. Since it was during the pandemic, my role ended up being more tech oriented than initially planned. 
-					Through my internship, I felt God refining my calling to ministry into more of a Tech Director role. During the pandemic, I saw how theological decisions were being made from the tech booth, as well as a growing need 
-					for tech within the church. Therefore, when I graduated from Ambrose in 2021, I applied for the Computer Systems Technology program from Sask Polytech. This is a two-year certificate program that covers systems 
-					administration, network administration, and various programming disciplines. I started this program in Fall 2022 and finished it in Spring 2024. During this same time period, I worked part time at Circle Drive Alliance 
-					as their Technical Production Manager. This role at Circle involved overseeing all their tech needs on Sunday mornings for their in-person service and the livestream. During this time, I managed a volunteer team of 
-					about twenty people and implemented improvements and repairs on their technical equipment. <br /><br />
-					
-					On the personal side, I have a variety of interests, one of which is building/DIY projects. In recent years, I enjoyed building myself a custom computer desk and creating a cable tester to start learning simple 
-					electronics. I also enjoy physical activity, whether competitive running, longboarding, or, in the past few years, commuting by bicycle year-round. I met my now wife, Jessie, at Ambrose. We dated throughout our degrees 
-					and got married in July 2021. Together, we enjoy cycling, camping, and playing boardgames. We are looking forward to finding a church where I can serve in tech ministry and where we can connect deeply with other 
-					believers and grow in community. 
-				</p>
-			</div>
-			<div class="row justify-content-center">
-				<div class="text-center">
-					<a class="btn btn-primary" href="./data/Lysholm, Brandon - Resume.pdf">View My Resume</a>
-					<a class="btn btn-primary" href="mailto:brandonlysholm@gmail.com">Contact Me</a>
-				</div>
-			</div>
-		</div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-	</body>
+        </div>
+    </div>
+</nav>
+<div class="container mt-2">
+    <div class="row justify-content-center">
+        <img class="col-md-4" src="./images/profile2020.png" alt="Picture of Brandon"/>
+    </div>
+    <div class="row">
+        <h1 class="text-center">About Me</h1>
+    </div>
+    <div class="row justify-content-center">
+        <p>
+            I grew up in various towns in western Canada. (I was a pastor’s kid, so we moved around a lot.) When I was
+            in high school, my family lived in northern BC. After graduating high school in 2015,
+            I worked full-time for a year before attending Ambrose University starting in the fall of 2016. <br/><br/>
+
+            At Ambrose, I went through the School of Ministry program, graduating with a Bachelor of Theology in Church
+            Ministry, with a minor in Psychology and a second minor in Sociology. Attending Ambrose was when my interest
+            in
+            theology really developed. I deeply enjoyed the biblical studies classes, and I gained an understanding that
+            there can be multiple approaches to theological issues that are each biblically supported. I also started
+            getting involved in tech at my church during my third year. As my church was short on sound techs, I got a
+            lot of practice in a short time and learned a lot. In my fourth year, I took the position of Chapel Tech
+            Coordinator at Ambrose, which involved overseeing both sound techs and ProPresenter techs. In previous
+            years, the Tech Coordinator did more of the tech themselves, but I wanted to build a volunteer team to cover
+            the
+            positions needed. I started the year with one ProPresenter tech, who had the same goal of building a team.
+            He was passionate and competent, so I supported him as he managed the ProPresenter team, which he built
+            up to include three more techs by the end of the year. On the audio side, I recruited and trained three more
+            sound techs. Building up, training, and supporting this volunteer team was the highlight of this
+            position for me. <br/><br/>
+
+            After my fourth year, I moved to Saskatoon in the Spring of 2020 to do my internship at Westgate Alliance
+            Church. Since it was during the pandemic, my role ended up being more tech oriented than initially planned.
+            Through my internship, I felt God refining my calling to ministry into more of a Tech Director role. During
+            the pandemic, I saw how theological decisions were being made from the tech booth, as well as a growing need
+            for tech within the church. Therefore, when I graduated from Ambrose in 2021, I applied for the Computer
+            Systems Technology program from Sask Polytech. This is a two-year certificate program that covers systems
+            administration, network administration, and various programming disciplines. I started this program in Fall
+            2022 and finished it in Spring 2024. During this same time period, I worked part time at Circle Drive
+            Alliance
+            as their Technical Production Manager. This role at Circle involved overseeing all their tech needs on
+            Sunday mornings for their in-person service and the livestream. During this time, I managed a volunteer team
+            of
+            about twenty people and implemented improvements and repairs on their technical equipment. <br/><br/>
+
+            On the personal side, I have a variety of interests, one of which is building/DIY projects. In recent years,
+            I enjoyed building myself a custom computer desk and creating a cable tester to start learning simple
+            electronics. I also enjoy physical activity, whether competitive running, longboarding, or, in the past few
+            years, commuting by bicycle year-round. I met my now wife, Jessie, at Ambrose. We dated throughout our
+            degrees
+            and got married in July 2021. Together, we enjoy cycling, camping, and playing boardgames. We are looking
+            forward to finding a church where I can serve in tech ministry and where we can connect deeply with other
+            believers and grow in community.
+        </p>
+    </div>
+    <div class="row justify-content-center">
+        <div class="text-center">
+            <a class="btn btn-primary" href="./data/Lysholm, Brandon - Resume.pdf">View My Resume</a>
+            <a class="btn btn-primary" href="mailto:brandonlysholm@gmail.com">Contact Me</a>
+        </div>
+    </div>
+</div>
+</body>
 </html>
