@@ -1,132 +1,180 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Brandon Lysholm's Portfolio</title>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/flatly/bootstrap.min.css">
-        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">-->
-    </head>
-    <body>
-        <!-- Navbar using bootstrap navbar basic settings -->
-        <div class="h-100 mb-2">
-            <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-                <div class="container-fluid">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            |
-                            <li class="nav-item">
-                                <a class="nav-link active" href="audio.html">Audio</a>
-                            </li>
-                            |
-                            <li class="nav-item">
-                                <a class="nav-link" href="video.html">Video</a>
-                            </li>
-                            |
-                            <li class="nav-item">
-                                <a class="nav-link" href="lighting.html">Lighting</a>
-                            </li>
-                            |
-                            <li class="nav-item">
-                                <a class="nav-link" href="it.html">IT Support</a>
-                            </li>
-                            |
-							<li class="nav-item">
-                                <a class="nav-link" href="education.html">Education</a>
-                            </li>
-                            |
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About Me</a>
-                            </li>
-                        </ul>
-                    </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brandon Lysholm's Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/my_navbar.css">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">-->
+</head>
+<body>
+<!-- Navbar using bootstrap navbar basic settings -->
+<div class="h-100 mb-2">
+    <nav class="navbar navbar-expand-sm bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <div class="container vstack d-md-none">
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse justify-content-center d-md-flex" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <img src="images/divider.jpg" class="d-none d-md-block flex-shrink"/>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="audio.html">Audio</a>
+                        </li>
+                        <img src="images/divider.jpg" class="d-none d-md-block flex-shrink"/>
+                        <li class="nav-item">
+                            <a class="nav-link" href="video.html">Video</a>
+                        </li>
+                        <img src="images/divider.jpg" class="d-none d-md-block flex-shrink"/>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lighting.html">Lighting</a>
+                        </li>
+                        <img src="images/divider.jpg" class="d-none d-md-block flex-shrink"/>
+                        <li class="nav-item">
+                            <a class="nav-link" href="it.html">IT Support</a>
+                        </li>
+                        <img src="images/divider.jpg" class="d-none d-md-block flex-shrink"/>
+                        <li class="nav-item">
+                            <a class="nav-link" href="education.html">Education</a>
+                        </li>
+                        <img src="images/divider.jpg" class="d-none d-md-block flex-shrink"/>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Me</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
+            </div>
         </div>
-        <div class="container">
-			<div class="row ">
-				<h1 class="text-center">Audio Experience</h1>
-			</div>
-			<div class="row mb-2">
-				<div class="col-md-8">
-					<h3>Live Audio</h3>
-					<p>
-						I got started volunteering in the tech booth years ago mixing audio for onsite worship. I have mixed audio for various churches of different sizes. The opportunity to 
-						work in various churches has given me the opportunity to learn to mix on different soundboards and with different styles of worship.<br />
-						I am most familiar with Yamaha digital mixers, but I have also worked on Allen & Heath and PreSonus digital mixers. I have also done some work on analog mixers. For monitor 
-						mixing, I have experience with wedge monitors and IEMs. With IEMs, I have mixed monitors for musicians as well as used the Aviom Personal Mixer system. During the 2019-2020 
-						academic year, I served as the Chapel Tech Coordinator at Ambrose University. There, we had to set up the stage from scratch for every chapel. Through this role, I gained 
-						experience with frequent stage strikes and how to wire a full system.
+    </nav>
+</div>
+<div class="container">
+    <div class="row ">
+        <h1 class="text-center">Audio Experience</h1>
+    </div>
+    <div class="row mb-2">
+        <div class="col-md-8">
+            <h3>Live Audio</h3>
+            <p>
+                I got started volunteering in the tech booth years ago mixing audio for onsite worship. I have mixed
+                audio for various churches of different sizes. The opportunity to
+                work in various churches has given me the opportunity to learn to mix on different soundboards and with
+                different styles of worship.<br/>
+                I am most familiar with Yamaha digital mixers, but I have also worked on Allen & Heath and PreSonus
+                digital mixers. I have also done some work on analog mixers. For monitor
+                mixing, I have experience with wedge monitors and IEMs. With IEMs, I have mixed monitors for musicians
+                as well as used the Aviom Personal Mixer system. During the 2019-2020
+                academic year, I served as the Chapel Tech Coordinator at Ambrose University. There, we had to set up
+                the stage from scratch for every chapel. Through this role, I gained
+                experience with frequent stage strikes and how to wire a full system.
 
-					</p>
-				</div>
-				<img src="./images/IMG_8262-edit.jpg" class="col-md-4" alt="Image of a digital mixer"/>
-			</div>
-			<div class="row mb-2">
-				<img src="./images/IMG_8328-edit.jpg" class="col-md-4" alt="Image of a Digital Audio Workstation"/>
-				<div class="col-md-8">
-					<h3>Online Audio</h3>
-					<p>
-						When I first started doing online audio in 2020, we used an aux send on the soundboard to allow a partially independent mix for livestream. We used this method because we did not have enough 
-						volunteers to create a position fully dedicated to online audio. Using the aux send as post-fader, one sound tech could easily adjust two mixes at once as the song required.<br />
-						During my time at Circle Drive Alliance (2022-present), we have used Dante to provide multitrack audio. We have a separate audio tech mix online audio via Reaper. This has given me experience 
-						mixing audio with a DAW. When I started, they did not have staff or volunteers with extensive audio experience, so I was able to provide some training on mixing live audio.
-					</p>
-				</div>				
-			<div class="row mb-2">
-				<div class="col-md-8">
-					<h3>Training Volunteers</h3>
-					<p>
-						I have had the opportunity to train several new sound techs. This has helped me to develop skills for training new techs and has helped me to articulate my knowledge of audio better. It also helped me 
-						to understand that it is necessary to have more objective guidelines for audio. While I prefer judging the volume of a mix via the subjective feeling of loudness, I learned that having objective 
-						guidelines can be beneficial in training and helping achieve consistency between sound techs.<br />
-						When I started working at Circle Drive Alliance, I had to learn how to help develop already trained sound techs and how to lead a pre-existing volunteer team. My previous experience leading a tech 
-						team was at Ambrose, with a team I recruited and trained.  This led to me learning how to evaluate a sound tech’s skills so that I can discern how best to support them and what additional 
-						training they may need, if any.
-					</p>
-				</div>
-				<img src="./images/training.jpg" class="col-md-4" alt="Image of Brandon and a volunteer talking during a service"/>
-			</div>
-			<div class="row mb-2">
-				<img src="./images/IMG_3098-edit.png" class="col-md-4" alt="Image of a Bible and a mic"/>
-				<div class="col-md-8">
-					<h3>Theology</h3>
-					<p>
-						How we mix audio communicates a church’s values and theology of worship. Through my Bachelor of Theology from Ambrose University, I learned to think more critically about what the tech booth does 
-						during a service. A church tech booth’s primary purpose is not to provide the most technologically sound concert, but to provide a meaningful worship experience for the congregation. A simple 
-						example of this would be the volume at which we mix the music. If we mix it too loud, it drowns out the voices of the congregation, communicating the idea that worship is a passive experience to 
-						be consumed. When a sound tech achieves the right balance for worship, he or she leaves room for the voices of the congregation to be heard, communicating the corporate nature of worship.
-					</p>
-				</div>			
-			</div>
-			<div class="row mb-2">
-				<div class="col-md-8">
-					<h3>Repair and Innovation</h3>
-					<p>
-						I have done various repair work on equipment. I am proficient in soldering and have made cables with small connections such as 3.5mm TRS cables. I have also learned how to make cables with crimped 
-						connections such as network cables with RJ45 ends and SDI cables with a BNC connector. I have also done troubleshooting and repair on other equipment such as DI boxes, speaker management systems, and 
-						electronic drum kit brains. I also have experience installing simple systems and adding onto existing systems. In Circle Drive Alliance’s chapel, I did the installation from an analog board and snake 
-						to a new digital snake and board. I have also used existing equipment and researched them to use features that the church was not previously using, to solve problems and improve production quality. An 
-						example of this is I installed the unused choir mics (Shure MX202s) at Circle Drive Alliance to be used on Sundays when we had a kids choir.
-					</p>
-				</div>
-				<img src="./images/IMG_8355-edit.jpg" class="col-md-4" alt="Image of tools"/>				
-			</div>
-		</div>
-		<div class="row">
-			<h2 class="text-center">Examples of my audio work</h2>
-		</div>
-		<div class="row">
-			<div class="col">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/9v-tRinK-5g?si=6sIDwz1sCQS4n3nB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-			</div>
-			<div class="col">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/twdjrBgTzxw?si=wc0GaICm_fBCRD-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-			</div>
-		</div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-	</body>
+            </p>
+        </div>
+        <img src="./images/IMG_8262-edit.jpg" class="col-md-4" alt="Image of a digital mixer"/>
+    </div>
+    <div class="row mb-2">
+        <img src="./images/IMG_8328-edit.jpg" class="col-md-4" alt="Image of a Digital Audio Workstation"/>
+        <div class="col-md-8">
+            <h3>Online Audio</h3>
+            <p>
+                When I first started doing online audio in 2020, we used an aux send on the soundboard to allow a
+                partially independent mix for livestream. We used this method because we did not have enough
+                volunteers to create a position fully dedicated to online audio. Using the aux send as post-fader, one
+                sound tech could easily adjust two mixes at once as the song required.<br/>
+                During my time at Circle Drive Alliance (2022-present), we have used Dante to provide multitrack audio.
+                We have a separate audio tech mix online audio via Reaper. This has given me experience
+                mixing audio with a DAW. When I started, they did not have staff or volunteers with extensive audio
+                experience, so I was able to provide some training on mixing live audio.
+            </p>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-8">
+                <h3>Training Volunteers</h3>
+                <p>
+                    I have had the opportunity to train several new sound techs. This has helped me to develop skills
+                    for training new techs and has helped me to articulate my knowledge of audio better. It also helped
+                    me
+                    to understand that it is necessary to have more objective guidelines for audio. While I prefer
+                    judging the volume of a mix via the subjective feeling of loudness, I learned that having objective
+                    guidelines can be beneficial in training and helping achieve consistency between sound techs.<br/>
+                    When I started working at Circle Drive Alliance, I had to learn how to help develop already trained
+                    sound techs and how to lead a pre-existing volunteer team. My previous experience leading a tech
+                    team was at Ambrose, with a team I recruited and trained. This led to me learning how to evaluate a
+                    sound tech’s skills so that I can discern how best to support them and what additional
+                    training they may need, if any.
+                </p>
+            </div>
+            <img src="./images/training.jpg" class="col-md-4"
+                 alt="Image of Brandon and a volunteer talking during a service"/>
+        </div>
+        <div class="row mb-2">
+            <img src="./images/IMG_3098-edit.png" class="col-md-4" alt="Image of a Bible and a mic"/>
+            <div class="col-md-8">
+                <h3>Theology</h3>
+                <p>
+                    How we mix audio communicates a church’s values and theology of worship. Through my Bachelor of
+                    Theology from Ambrose University, I learned to think more critically about what the tech booth does
+                    during a service. A church tech booth’s primary purpose is not to provide the most technologically
+                    sound concert, but to provide a meaningful worship experience for the congregation. A simple
+                    example of this would be the volume at which we mix the music. If we mix it too loud, it drowns out
+                    the voices of the congregation, communicating the idea that worship is a passive experience to
+                    be consumed. When a sound tech achieves the right balance for worship, he or she leaves room for the
+                    voices of the congregation to be heard, communicating the corporate nature of worship.
+                </p>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-8">
+                <h3>Repair and Innovation</h3>
+                <p>
+                    I have done various repair work on equipment. I am proficient in soldering and have made cables with
+                    small connections such as 3.5mm TRS cables. I have also learned how to make cables with crimped
+                    connections such as network cables with RJ45 ends and SDI cables with a BNC connector. I have also
+                    done troubleshooting and repair on other equipment such as DI boxes, speaker management systems, and
+                    electronic drum kit brains. I also have experience installing simple systems and adding onto
+                    existing systems. In Circle Drive Alliance’s chapel, I did the installation from an analog board and
+                    snake
+                    to a new digital snake and board. I have also used existing equipment and researched them to use
+                    features that the church was not previously using, to solve problems and improve production quality.
+                    An
+                    example of this is I installed the unused choir mics (Shure MX202s) at Circle Drive Alliance to be
+                    used on Sundays when we had a kids choir.
+                </p>
+            </div>
+            <img src="./images/IMG_8355-edit.jpg" class="col-md-4" alt="Image of tools"/>
+        </div>
+    </div>
+    <div class="row">
+        <h2 class="text-center">Examples of my audio work</h2>
+    </div>
+    <div class="row">
+        <div class="col">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9v-tRinK-5g?si=6sIDwz1sCQS4n3nB"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="col">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/twdjrBgTzxw?si=wc0GaICm_fBCRD-E"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+</body>
 </html>

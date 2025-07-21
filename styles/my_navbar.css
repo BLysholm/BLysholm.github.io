@@ -1,0 +1,9 @@
+/*Overrides the default bootstrap navbar height, to create a consistent height for my navbar*/
+@media screen and (min-width: 768px) {
+    .navbar-fixed-height {
+        height: 40px
+    }
+    .mynav-text-center {
+        text-align: center
+    }
+}
