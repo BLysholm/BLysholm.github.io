@@ -1,0 +1,1 @@
+All pages are responsive, but need to refine youtube embeds
