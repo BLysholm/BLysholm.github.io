@@ -202,5 +202,28 @@
         </div>
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!-- adding in jquery -->
+<script>
+    let myURL = "https://docs.google.com/forms/d/e/1FAIpQLScbb4jky2SwLJrSswqib0NyhJdPjHuxRuHBD_oKKFXZJ7ER6g/formResponse?usp=pp_url&entry.658262346=Yes"
+
+    window.onload = () => {
+        // getting cookies
+        let cookie = document.cookie;
+
+        // checking if the cookie does not exist
+        if (!cookie) {
+            // submitting form
+            $.ajax({
+                type: "POST",
+                url: myURL,
+            })
+
+            // setting the cookie, expires in seven days
+            document.cookie = "visited=true; max-age=604800"
+        }
+
+    }
+
+</script>
 </body>
 </html>
