@@ -204,24 +204,58 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!-- adding in jquery -->
 <script>
-    let myURL = "https://docs.google.com/forms/d/e/1FAIpQLScbb4jky2SwLJrSswqib0NyhJdPjHuxRuHBD_oKKFXZJ7ER6g/formResponse?usp=pp_url&entry.658262346=Yes"
+    let myVisitedURL = "https://docs.google.com/forms/d/e/1FAIpQLScbb4jky2SwLJrSswqib0NyhJdPjHuxRuHBD_oKKFXZJ7ER6g/formResponse?usp=pp_url&entry.658262346=Yes";
+    let locationAnalyticsURL = "https://docs.google.com/forms/d/e/1FAIpQLSfS3sOaU-55dW9cms6f6LDkMazX6jI9X_uxQdkQW_qJ7mbGkw/formResponse?usp=pp_url";
+
 
     window.onload = () => {
-        // getting cookies
+        // getting all cookies
         let cookie = document.cookie;
+        // parsing different types of cookies
+        let visitCookie = cookie.split("; ").find((row)=> row.startsWith("visited="));
+        let locationAnalyticsCookie  = cookie.split("; ").find(row => row.startsWith("locationAnalytics="));
 
-        // checking if the cookie does not exist
-        if (!cookie) {
-            // submitting form
+        // checking if the visited cookie does not exist
+        if (!visitCookie) {
+            // submitting form to notify visited
             $.ajax({
                 type: "POST",
-                url: myURL,
-            })
+                url: myVisitedURL,
+            });
 
-            // setting the cookie, expires in 24hrs
-            document.cookie = "visited=true; max-age=86400"
+            // setting the visited cookie, expires in 24hrs
+            document.cookie = "visited=true; max-age=86400";
         }
 
+        if (!locationAnalyticsCookie) {
+            // Collect IP
+            let ipAddr = "noResponse"
+            let ipLocal = "noResponse"
+            let ipResponse = false
+
+            fetch("https://ipinfo.io/json")
+                .then(response => response.json())
+                .then(data => {
+                    ipAddr = (data["ip"]).replaceAll('.','+');
+                    ipLocal = data["city"];
+                    ipResponse = true;
+                    // Formatting the URL
+                    locationAnalyticsURL = locationAnalyticsURL + "&entry.1717032752=" + ipAddr + "&entry.307557903=" + ipLocal;
+                    $.ajax({
+                        type: "POST",
+                        url: locationAnalyticsURL
+                    })
+
+                })
+                .catch(e => {
+                    // Probably going to catch errors 100% due to CORS issue with ajax to the Google Form
+                    console.log(e)
+                })
+            if (ipResponse) {
+                // Only setting a cookie if I got a response from ipinfo
+                document.cookie = "locationAnalytics=true; max-age=86400";
+            }
+        }
     }
 
 </script>
