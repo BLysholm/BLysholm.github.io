@@ -231,14 +231,12 @@
             // Collect IP
             let ipAddr = "noResponse"
             let ipLocal = "noResponse"
-            let ipResponse = false
 
             fetch("https://ipinfo.io/json")
                 .then(response => response.json())
                 .then(data => {
                     ipAddr = (data["ip"]).replaceAll('.','+');
                     ipLocal = data["city"];
-                    ipResponse = true;
                     // Formatting the URL
                     locationAnalyticsURL = locationAnalyticsURL + "&entry.1717032752=" + ipAddr + "&entry.307557903=" + ipLocal;
                     $.ajax({
@@ -251,10 +249,10 @@
                     // Probably going to catch errors 100% due to CORS issue with ajax to the Google Form
                     console.log(e)
                 })
-            if (ipResponse) {
-                // Only setting a cookie if I got a response from ipinfo
-                document.cookie = "locationAnalytics=true; max-age=86400";
-            }
+
+                
+            // Setting the cookie  
+            document.cookie = "locationAnalytics=true; max-age=86400";
         }
     }
 
